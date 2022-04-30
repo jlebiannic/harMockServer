@@ -1,0 +1,9 @@
+# fetch POST javascript dans la console du browser:
+fetch("http://localhost/testpost", {
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "method": "POST", 
+  "headers": { "Content-Type": "application/json" }, 
+  "mode": "cors",
+  "credentials": "omit", 
+  "body": JSON.stringify({personne : {nom : "Dupont", prenom: "Jean"}})
+});
